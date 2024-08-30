@@ -1,0 +1,266 @@
+.App {
+  /* margin-top: 4rem; */
+  /* padding: 0.5rem; */
+  width:800px;
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  font-size: 1.2rem;
+  background-color: white;
+}
+
+
+
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+  .logo {
+    /* Style your logo */
+    height: 25px; /* Adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+
+
+.ton-btn {
+  display: flex; /* Ensures content inside the button is centered */
+  align-items: center; /* Vertically centers content within the button */
+  justify-content: center; /* Horizontally centers content within the button */
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.mute-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p span {
+
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.game-info-bar {
+
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.game-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.game-score em {
+  /* background-color: white; */
+
+
+  color: black;
+  font-style: inherit;
+
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+
+.lives {
+
+  gap: 1.5rem;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  scale: 80%;
+}
+
+
+
+
+
+.start-btn,
+.end-btn {
+
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 25px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Play', sans-serif;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+
+.start-btn:focus ,
+.end-btn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.start-btn:hover ,
+.end-btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.start-btn:active ,
+.end-btn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button-row {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  gap: 10px; /* Optional: Adds space between the logo and button */
+  display: flex; /* Ensures content inside the button is centered */
+  align-items: center; /* Vertically centers content within the button */
+  justify-content: center; /* Horizontally centers content within the button */
+
+  display: flex;
+  gap: 75px;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.game-buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.start-btn, .end-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+.start-btn {
+  margin-bottom: 50px ;
+}
+.end-btn {
+  margin-bottom: 50px ;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    width: 400px;
+  }
+  .circle-container {
+    gap: 1rem;  
+  }
+
+  .lives {
+    gap: 0.5rem;
+  }
+}
+
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  position: static;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+}
+
+.Center { grid-area: 1 / 1 / 4 / 4; }
+
+.empty-1 { grid-area: 1 / 1 / 2 / 2; }
+
+.empty-2 { grid-area: 1 / 3 / 2 / 4; }
+
+.empty-3 { grid-area: 2 / 2 / 3 / 3; }
+
+.empty-4 { grid-area: 3 / 1 / 4 / 2; }
+
+.empty-5 { grid-area: 3 / 3 / 4 / 4; }
+
+.circle-1 { grid-area: 1 / 2 / 2 / 3; }
+
+.circle-2 { grid-area: 2 / 1 / 3 / 2; }
+
+.circle-3 { grid-area: 2 / 3 / 3 / 4; }
+
+.circle-4 { grid-area: 3 / 2 / 4 / 3; }
+
+.status-bar {
+  margin-top: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* or space-around, if you want equal spacing on both sides */
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 5px; /* Optional: space below the status bar */
+}
+
+.lives {
+  font-size: 18px;
+
+  margin: 0;
+}
+
+.game-info-bar {
+  display: flex;
+  align-items: center;
+}
+
+.game-score {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
