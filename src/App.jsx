@@ -266,9 +266,9 @@ class App extends Component {
 
           {/* Display wallet address and wallet information */}
           <div className="wallet-info">
-            <h3>Wallet Information</h3>
+{/*             <h3>Wallet Information</h3>
             <Address />
-            <WalletInfo />
+            <WalletInfo /> */}
           </div>
         </div>
       </TonConnectUIProvider>
